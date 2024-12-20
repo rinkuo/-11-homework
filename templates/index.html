@@ -7,7 +7,7 @@
         <div class="news-item">
             <h2>{{ article.title }}</h2>
             <p>{{ article.short_content }}</p>
-            <a href="" class="read-more">Batafsil</a>
+            <a href="{{ article.get_detail_url }}" class="read-more">Batafsil</a>
         </div>
     {% empty %}
         <h2>Hozircha yangilik yo'q</h2>
